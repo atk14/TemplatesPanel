@@ -1,0 +1,23 @@
+{
+        "name": "atk14/templates-panel",
+        "type": "library",
+        "description": "A panel for Tracy Debugger in an ATK14 project. Displays nested list of all rendered templates.",
+        "keywords": ["atk14", "template", "tracy"],
+        "homepage": "https://github.com/atk14/TemplatesPanel",
+        "license": ["MIT"],
+        "authors": [
+                {
+                        "name": "Jaromir Tomek",
+                        "homepage": "https://github.com/yarri"
+                }
+        ],
+        "require": {
+                "php": ">=5.4.0",
+                 "tracy/tracy": ">=2.2"
+        },
+        "require-dev": {
+        },
+        "autoload": {
+                "classmap": ["src"]
+        }
+}

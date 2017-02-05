@@ -10,6 +10,10 @@ class TemplatesPanel implements Tracy\IBarPanel {
 	}
 
 	function getPanel(){
+		if(!isset(Atk14Smarty::$ATK14_RENDERED_TEMPLATES)){
+			return '<p>Your installed ATK14 is too old. Please install a newer version.</p>';
+		}
+
 		$items = Atk14Smarty::$ATK14_RENDERED_TEMPLATES;
 		return $this->_renderList($items);
 	}
